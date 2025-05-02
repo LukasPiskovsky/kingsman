@@ -14,6 +14,10 @@ html {
     padding:0;
     box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden;
+}
                 /**BODY**/
 body{
     background-color: #111;
@@ -704,13 +708,14 @@ footer a{
         width:100%;
     }
     .grid-container{
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-columns: none;
-        padding:40px;
+        padding:0px;
         border-radius: 0px;
+        margin: 0 auto;
+        width:50%;
     }
     .grid-container img{
+        width:200px;
         margin:0 auto;
         opacity: 0.8;
     }
@@ -723,7 +728,7 @@ footer a{
     .grid-container div ul{
         width:unset;
         overflow: hidden;
-        width:300px;
+        width:70%;
         margin:0 auto;
     }
 
@@ -784,8 +789,12 @@ footer a{
     
     }
     
-    #contact-div, #open-hours{
-        padding: 30px 25%;
+    #contact-div{
+        padding: 2px 25%;
+    }
+    
+    #open-hours{
+        padding: 30px 20%;
     }
     
     #contact-div{
