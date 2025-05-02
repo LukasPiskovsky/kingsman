@@ -486,7 +486,7 @@ iframe{
     min-width: 300px;
     border: 100px solid var(--box-bg);
     border-radius: 0px 10px 10px 0px;
-    transition: all 1.5s ease-in;
+    transition: all .5s ease-in;
     transition-delay: 0.2s;
 }
 
