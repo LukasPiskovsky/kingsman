@@ -114,6 +114,7 @@ nav ul li a:hover::after{
     top:8px;
     filter: brightness(0.7);
     visibility: hidden;
+    
 }
 
 ul a img{
@@ -215,16 +216,18 @@ section:nth-child(even){
 
 .grid-container div ul{
     padding: 10px 0;
-    li{
-        list-style-type: none;
-        font-size: 1rem;
-        margin-bottom: 10px;
-        user-select: none;
-    }
-    span{
-        color:var(--heading-color);
-        font-weight: 700;
-    }
+}
+
+.grid-container div ul li{
+    list-style-type: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.grid-container div ul span{
+    color:var(--heading-color);
+    font-weight: 700;
 }
 
 .grid-container:hover{
@@ -278,43 +281,52 @@ section:nth-child(even){
     height:200px;
     border-radius: 20px;
     cursor:pointer;
-    img{
-        width:100px;
-        filter:brightness(0.6) grayscale(0.7);
-    }
-    h2{
-        text-align: center;
-        position: absolute;
-        bottom:20px;
-        color: var(--txt-color);
-        font-family: "Montserrat", sans-serif;
-        user-select: none;
-        opacity: 0.7;
-    }
-    h2.placeholder{
-        text-align: center;
-        position: static;
-        visibility: hidden;
-        color: var(--txt-color);
-        font-family: "Montserrat", sans-serif;
-        user-select: none;
-        opacity: 0.7;
-    }
+}
+.service-div img{
+    width:100px;
+    filter:brightness(0.6) grayscale(0.7);
+}
+
+
+.service-div img{
+    width:100px;
+    filter:brightness(0.6) grayscale(0.7);
+}
+
+.service-div h2{
+    text-align: center;
+    position: absolute;
+    bottom:20px;
+    color: var(--txt-color);
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    opacity: 0.7;
+}
+
+.service-div h2.placeholder{
+    text-align: center;
+    position: static;
+    visibility: hidden;
+    color: var(--txt-color);
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    opacity: 0.7;
 }
 
 .service-div:hover{
     /* background-color: #999; */
     background-color: #fff;
     filter: brightness(0.74);
-    h2{
-        color: #111;
-        opacity: 1;
-    }
-    img{
-        filter:brightness(1) grayscale(0.7);
-        width:130px;
-    }
+}
 
+.service-div:hover h2{
+    color: #111;
+    opacity: 1;
+}
+
+.service-div:hover img{
+    filter:brightness(1) grayscale(0.7);
+    width:130px;
 }
 
 .grid-container-services{
@@ -325,26 +337,29 @@ section:nth-child(even){
     min-width: 855px;
     padding:20px;
     border-radius: 20px;
-    img{
-        width:80%;
-        min-width: 300px;
-        max-height:250px;
-        filter: brightness(0.8);
-        border-radius: 20px;
-    }
-    h2{
-        text-align: center;
-        color: var(--heading-color);
-        font-family: "Montserrat", sans-serif;
-        user-select: none;
-        padding-top: 50px;
-    }
-    p{
-        color: var(--txt-color);
-        padding:30px;
-        width:500px;
-        margin:0 auto;
-    }
+}
+
+.grid-container-services img{
+    width:80%;
+    min-width: 300px;
+    max-height:250px;
+    filter: brightness(0.8);
+    border-radius: 20px;
+}
+
+.grid-container-services h2{
+    text-align: center;
+    color: var(--heading-color);
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    padding-top: 50px;
+}
+
+.grid-container-services p{
+    color: var(--txt-color);
+    padding:30px;
+    width:500px;
+    margin:0 auto;
 }
 
 /**price-table**/
@@ -503,7 +518,275 @@ footer{
     align-items: center;
     padding:20px;
     color: var(--txt-color);
-    a{
-        color:#444
+}
+
+footer a{
+    color:#222
+}
+
+@media (max-width:1200px){
+    html {
+        font-size: 90%;
+    }
+    /*barbers*/
+    .main-grid-container{
+        width:100%;
+    }
+    .grid-container{
+        border-radius: 0px;
+    }
+    .grid-container img{
+        margin:0 auto;
+        width:200px;
+        border-radius: 30px;
+        opacity: 0.6;
+        transition: 0.3s all ease-in;
+    }
+    /*Services*/
+    .flex-container{
+        gap:0%;
+        background-color: var(--box-bg);
+    }
+    .service-div{
+        gap:0px;
+        border-radius: 0px;
+        background-color: unset;
+    }
+
+    .service-div h2{
+        display: none;
+    }
+    
+    .service-div h2.placeholder{ 
+        display: none;
+     }
+
+
+    .service-div:hover img{
+        width:130px;
+    }
+    .grid-container-services{
+        grid-template-columns: 1fr;
+        margin: 10px auto 0;
+        width: 100%;
+        min-width: unset;
+        border-radius: 0px;
+    }
+
+    .grid-container-services img{
+        width:50%;
+        border-radius:20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .grid-container-services h2{
+        padding-top: 20px;
+    }
+
+    /**price-table**/
+
+    #price-table {
+        width: 100%;
+        min-width: unset;
+        padding:30px;
+        border-radius: 0px;
+    
+    }
+    
+    #price-table td{
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    #price-table tr:nth-child(even)::after{
+        height: 30px;
+        right: 0;
+        border-radius: 0px;
+    }
+    
+    #price-table tr.widen::after{
+        width:100%;
+        transition: all 0.8s ease-in;
+        transition-delay: 0.2s;
+    }
+    
+    #price-list p{
+        width:100%;
+        min-width: unset;
+    }
+    #price-list p:first-of-type{
+        padding-top:40px;
+    }
+
+    /**Contacts**/
+    .grid-container-contacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    
+    .grid-container-contacts div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--txt-color);
+    
+    }
+
+    .grid-container-contacts tr:nth-child(odd)::after{
+        right: 0%;
+        border-radius: 0px;
+    }
+    
+    .grid-container-contacts tr.widen::after{
+        width:100%;
+    }
+    
+    #contact-div, #open-hours{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 40px;
+        gap:0px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #contact-div{
+        padding-top: 5%;
+        border-radius: 0px;
+    }
+    
+    iframe{
+        width: 100%;
+        min-width: 100px;
+        height: 100%;
+        border-radius:0px;
+
+    }
+} 
+
+@media (max-width:600px){
+    html {
+        font-size: 80%;
+    }
+    /*heading*/
+    .heading{
+        padding:0px;
+        padding-bottom: 20px;
+        gap:40px;
+        top:50px;
+        border-radius: 0px;
+        width:100%;
+    }
+    
+    /*Nav*/
+    nav ul{
+        justify-content: end;
+        gap:15px;
+    }
+
+    #logo{
+        position: absolute;
+        left:10px;
+        top:8px;
+        filter: brightness(0.7);
+        visibility: visible !important;
+    }
+
+    /*barbers*/
+
+    .main-grid-container{
+        width:100%;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: none;
+        padding:40px;
+        border-radius: 0px;
+    }
+    .grid-container img{
+        margin:0 auto;
+        opacity: 0.8;
+    }
+
+
+    .grid-container div h2{
+        padding-top: 20px;
+    }
+    
+    .grid-container div ul{
+        width:unset;
+        overflow: hidden;
+        width:300px;
+        margin:0 auto;
+    }
+
+    .grid-container div ul li{
+        margin-bottom: 20px;
+    }
+    
+    /*Services*/
+
+    .service-div{
+        gap:0px;
+        border-radius: 0px;
+        width:110px;
+        height:100px;
+    }
+    .service-div img{
+        width:50px;
+    }
+
+    .service-div:hover img{
+        width:65px;
+    }
+    .grid-container-services{
+        grid-template-columns: 1fr;
+        margin: 0px auto 0;
+        width: 100%;
+        height: 450px;
+    }
+
+    .grid-container-services img{
+        width:70%;
+        border-radius:20px;
+    }
+
+    .grid-container-services h2{
+        padding-top: 10px;
+    }
+    #about-service p{
+        width:350px;
+    }
+
+    /**price-table**/ 
+
+
+    /**Contacts**/
+    .grid-container-contacts{
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-container-contacts div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--txt-color);
+    
+    }
+    
+    #contact-div, #open-hours{
+        padding: 30px 25%;
+    }
+    
+    #contact-div{
+        padding-top: 50px;
     }
 }
