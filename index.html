@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="content" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="heading background-box">
+            <h1>KINGSMAN</h1>
+            <h2>Barbershop</h2>
+        </div>
+
+        <nav>
+            <ul class="background-box" id="nav-bar">
+                <a href="#header" id="logo"><img src="img/logo-black.png"></a>
+                <li><a href="#barbers">Barbeři</a></li>
+                <li><a href="#services">Služby</a></li>
+                <li><a href="#price-list">Ceník</a></li>
+                <li><a href="#contacts">kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="blur"></div>
+    </header>
+    <main>
+        <section id="barbers">
+            <h1 class="sub-heading">Naši Barbeři</h1>
+            <div class="main-grid-container">
+                <div class="grid-container background-box">
+                    <img src="img/barber1.jpg" alt="">
+                    <div>
+                        <h2>Adam Novotný</h2>
+                        <h3>Blade</h3>
+                        <ul>
+                            <li><span>Věk:</span> 26 let</li>
+                            <li><span>Styl práce:</span> Precizní a trpělivý, každý střih ladí do detailu; mistr skin fade střihů, úprav vousů a holení břitvou.</li>
+                            <li><span>Osobnost:</span> Na první pohled drsný, ale velmi přátelský a pohodový, rád si povídá o stylu a poradí klientovi střih na míru.</li>
+                            <li><span>Původ:</span> Vypracoval se z malého barber shopu v Brně na uznávaného profesionála.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="grid-container background-box">
+                    <img src="img/barber2.jpg" alt="">
+                    <div>
+                        <h2>Tomáš Vávra</h2>
+                        <h3>Slick</h3>
+                        <ul>
+                            <li><span>Věk:</span> 34 let</li>
+                            <li><span>Styl práce:</span> Rychlý, efektivní, ale s důrazem na perfektní tvar; zaměřuje se na moderní střihy a styling pro byznys klientelu.</li>
+                            <li><span>Osobnost:</span> Profesionální, miluje čistotu a řád, ale při práci se rád uvolní a prohodí pár vtipů.</li>
+                            <li><span>Původ:</span> Dlouhá léta působil v zahraničí (Londýn, Berlín), dnes vlastní svůj vlastní barber lounge.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-container background-box">
+                    <img src="img/barber3.jpg" alt="">
+                    <div>
+                        <h2>Lukáš Mašek</h2>
+                        <h3>Wolf</h3>
+                        <ul>
+                            <li><span>Věk:</span> 29 let</li>
+                            <li><span>Styl práce:</span> Divoký, kreativní, miluje experimenty s délkami a texturami, specialista na alternativní střihy a oldschool vousy.</li>
+                            <li><span>Osobnost:</span> Svobodomyslný, energický, vždy připravený na konverzaci o hudbě, filmech nebo tetování.</li>
+                            <li><span>Původ:</span> Vyrůstal na vesnici, kde ho dědeček naučil pracovat s břitvou, dnes vede nejvíc "underground" barber shop ve městě.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-container background-box">
+                    <img src="img/barber4.jpg" alt="">
+                    <div>
+                        <h2>Jana Benešová</h2>
+                        <h3>Silky</h3>
+                        <ul>
+                            <li><span>Věk:</span> 31 let</li>
+                            <li><span>Styl práce:</span> Detailistka, zaměřená na luxusní služby. Každé holení provádí jako malý rituál s aromaterapií a masáží.</li>
+                            <li><span>Osobnost:</span> Klidná, galantní, s klienty buduje vztah založený na důvěře a osobní péči.</li>
+                            <li><span>Původ:</span> Původně pracovala v luxusním hotelu v Praze, kde se starala o VIP klientelu, dnes provozuje privátní barber studio.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h1 class="sub-heading">Služby</h1>
+            <div class="flex-container">
+                <div class="service-div background-box">
+                    <img src="img/services/conversation.png" alt="" class="service-img">
+                    <h2>Skonzultujeme</h2>
+                    <h2 class="placeholder">Skonzultujeme</h2>
+                </div>
+                <div class="service-div background-box">
+                    <img src="img/services/scissors.png" alt="" class="service-img">
+                    <h2>Ostříháme</h2>
+                    <h2 class="placeholder">Ostříháme</h2>
+                </div>
+                <div class="service-div background-box">
+                    <img src="img/services/razor.png" alt="" class="service-img">
+                    <h2>Oholíme</h2>
+                    <h2 class="placeholder">Oholíme</h2>
+                </div>
+                <div class="service-div background-box">
+                    <img src="img/services/bubble.png" alt="" class="service-img">
+                    <h2>Umyjeme</h2>
+                    <h2 class="placeholder">Umyjeme</h2>
+                </div>
+                <div class="service-div background-box">
+                    <img src="img/services/whiskey.png" alt="" class="service-img">
+                    <h2>Whiskey</h2>
+                    <h2 class="placeholder">Whiskey</h2>
+                </div>
+            </div>
+            <div class="grid-container-services background-box" id="about-service">
+                <div>
+                    <h2 id="service-heading"></h2>
+                    <p id="service-text"></p>
+                </div>
+
+                <div>
+                    <img src="#" alt="" id="service-photo">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="price-list">
+            <h1 class="sub-heading">Ceník</h1>
+            <table id="price-table" class="background-box">
+                <tr><th>Název služby</th><th>Cena</th><th>Popis</th></tr>
+            </table>
+
+            <p>* Na našem baru dále nabízíme alkoholické i nealkoholické nápoje</p>
+            <p>** Ke kompletnímu balíčku dostanete zdarma kvalitní whiskey</p>
+            <p>*** Veškeré ceny jsou včetně DPH</p>
+        </section>
+
+        <section id="contacts">
+            <h1 class="sub-heading">Kontakt</h1>
+            <div class="grid-container-contacts ">
+                <div class="contacts">
+                    <div id="contact-div" class="background-box">
+                        <p><span>Email:</span><br>lukaspiskovsky@gmail.com</p>
+                        <p><span>Tel.:</span><br>123 456 789</p>
+                        <p><span>Adresa:</span><br>U holičů 456, Zlín</p>
+                    </div>
+
+                    <div id="open-hours" class="background-box">
+                        <span class="table-heading">Otevírací doba</span>
+                        <table>
+                            <tr><td>Pondělí</td><td>10-18</td></tr>
+                            <tr><td>Úterý</td><td>10-18</td></tr>
+                            <tr><td>Středa</td><td>10-18</td></tr>
+                            <tr><td>Čtvrtek</td><td>10-18</td></tr>
+                            <tr><td>Pátek</td><td>10-18</td></tr>
+                            <tr><td>Sobota</td><td>8-13</td></tr>
+                            <tr><td>Neděle</td><td>ZAVŘENO</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <iframe id="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20847.36715091711!2d17.635563768538862!3d49.221027308042075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713735126a5d81b%3A0x9db9219fe8516f24!2sGolden%20apple%20Shopping%20Mall!5e0!3m2!1sen!2scz!4v1746171209210!5m2!1sen!2scz" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            &copy; Stránku vytvořil: Lukáš Pískovský
+        </div>
+        <div>
+            <a href="https://www.flaticon.com/free-animated-icons/scissors" title="scissors animated icons">Scissors animated icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-animated-icons/barber-shop" title="barber shop animated icons">Barber shop animated icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-animated-icons/food-and-restaurant" title="food and restaurant animated icons">Food and restaurant animated icons created by Freepik - Flaticon</a><br>
+            <a href="https://www.flaticon.com/free-animated-icons/conversation" title="conversation animated icons">Conversation animated icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-animated-icons/bath" title="bath animated icons">Bath animated icons created by Freepik - Flaticon</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="jQuery.js"></script>
+</body>
+</html>
