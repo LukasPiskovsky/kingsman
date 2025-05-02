@@ -766,7 +766,9 @@ footer a{
     }
 
     /**price-table**/ 
-
+    #price-list p:first-of-type{
+        padding-top:140px;
+    }
 
     /**Contacts**/
     .grid-container-contacts{
