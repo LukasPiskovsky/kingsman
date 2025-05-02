@@ -48,14 +48,6 @@ for (let i = 0; i < subHeading.length; i++) {
         }
     });
 }
-// for(let i=0; i<subHeading.length; i++){
-//     window.addEventListener("scroll", () =>{
-//         if(window.scrollY > (window.innerHeight * i + 70)){
-//             subHeading[i].style.opacity = "1"
-//             subHeading[i].style.transform = "scale(1)"
-//         }
-//     })
-// }
 
 /*services*/
 let serviceDivs = document.querySelectorAll(".service-div")
@@ -205,12 +197,12 @@ const iFrameMap = document.getElementById("iframe-map")
 window.addEventListener("scroll", () => {
     let offset = section[0].scrollHeight + section[1].scrollHeight + section[2].scrollHeight
     if(window.scrollY >=  offset + 200){
-        iFrameMap.classList.add("border-growth")
+        // iFrameMap.classList.add("border-growth")
         oddRowsContactList.forEach((tr) =>{
             tr.classList.add("widen")
         })
     } else {
-        iFrameMap.classList.remove("border-growth")
+        // iFrameMap.classList.remove("border-growth")
         oddRowsContactList.forEach((tr) =>{
             tr.classList.remove("widen")
         })
